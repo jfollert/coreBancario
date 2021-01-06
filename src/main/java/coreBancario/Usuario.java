@@ -77,7 +77,6 @@ public class Usuario {
 		} else if (divisa.equals("USD")) {
 			estadoOperacion = this.cuentaUSD.depositar(monto);
 		} else {
-			System.out.println("La divisa recibida no se reconoce como válida");
 			return false;
 		}
 		// Verificar si la operación fue realizada de forma exitosa
@@ -104,10 +103,8 @@ public class Usuario {
 		} else if (divisa.equals("USD")) {
 			estadoOperacion = this.cuentaUSD.retirar(monto);
 		} else {
-			System.out.println("La divisa recibida no se reconoce como válida");
 			return false;
 		}
-		System.out.println("USUARIO estadoOperacion: " + estadoOperacion);
 		// Verificar si la operación fue realizada de forma exitosa
 		if (estadoOperacion) {
 			//Agregar registro al historial

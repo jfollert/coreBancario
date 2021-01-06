@@ -1,1 +1,4 @@
-core.log
+target/
+.gradle
+build
+pom.xml
